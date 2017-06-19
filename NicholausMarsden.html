@@ -1,0 +1,81 @@
+
+<html>
+
+
+<head>
+<title> Nicholaus Marsden page </title>
+
+  
+
+</head>
+
+
+<body bgcolor="#00FFFF">
+
+<h1>  Nicholaus Marsden page  </h1>
+<p> How many people are affected by the farts of there neighbour? When i was in school i was both the victim 
+and the person who was assaulting other people. Farts are dangerous so this survay is to test your survival instinct.
+I hope all the best. There is more information pertaining to  this topic from this link.  
+<a href="http://www.oddee.com/item_98612.aspx" target = "_blank">Survive the dangerous farts</a> </p>
+
+
+<p class="question1">1. How strong are the farts of the people you know are towards you?</p>
+<ul class="answers">
+<input type="radio" name="1" value="a" id="first" onclick="document.getElementById('question1Result').innerHTML='Incorrect';" <label for="first"> Weak </label><br/> 
+<input type="radio" name="1" value="b" id="second" onclick="document.getElementById('question1Result').innerHTML='Incorrect';"><label for="second"> Medium </label><br/>
+<input type="radio" name="1" value="c" id="third" onclick="document.getElementById('question1Result').innerHTML='Correct';"><label for="third"> High </label><br/>
+</u1>
+<p id="question1Result"> </p>
+
+<button onclick="document.getElementById('question1Result').innerHTML = 'High';"> Answer </button>
+
+<p> if you got number 1 correct, you might consider getting this item <a href="http://www.ebay.com/itm/like/181767756730?lpid=82&chn=ps&ul_noapp=true"target = "_blank">Servival Tatical Gas Mask</a></p>
+
+<p class="question2">2. What do you do when someone farts?</p>
+<ul class="answers2">
+<input type="radio" name="q1" value="d" id="run"><label for="run">Run</label><br/>
+<input type="radio" name="q1" value="e" id="inhale"><label for="inhale">Inhale</label><br/>
+<input type="radio" name="q1" value="f" id="fart"><label for="fart">Fart back</label><br/>
+</ul>
+
+<p id="question2Result"> </p>
+<button onclick="document.getElementById('question2Result').innerHTML = 'Run';"> Answer </button>
+
+<p> 3.  What happens when someone around you fart?</p>
+
+<input type="image" src="fart.png" name="saveForm" class="btTxt submit" id="save1" onclick="document.getElementById('question3Result').innerHTML='Incorrect';"/>
+<input type="image" src="fire.png" name="saveForm" class="btTxt submit" id="save2" onclick="document.getElementById('question3Result').innerHTML='Correct';"/>
+<input type="image" src="dead.png" name="saveForm" class="btTxt submit" id="save3" onclick="document.getElementById('question3Result').innerHTML='Incorrect';"/>
+
+<p id="question3Result"> </p>
+<p></p>
+<img id="question3image" src="" >
+<p></p>
+<button onclick="document.getElementById('question3image').src='fire.png';"> Answer </button>
+
+
+<p id="demo"></p>
+<script type="text/javascript">
+    window.onload = function() {
+
+    	var ex1 = document.getElementById('run');
+    	var ex2 = document.getElementById('inhale');
+    	var ex3 = document.getElementById('fart');
+
+    	ex1.onclick = handler;
+    	ex2.onclick = handler1;
+    	ex3.onclick = handler1;
+    }
+
+    function handler() {
+document.getElementById("question2Result").innerHTML = "Correct";
+  }
+    function handler1() {
+document.getElementById("question2Result").innerHTML = "InCorrect";
+  }
+  </script>
+
+
+<button onclick="document.location.reload();">Reset</button>
+</body>
+</html>
